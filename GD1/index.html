@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRACIVE - Premium Polo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">GRACIVE</div>
+      <nav>
+        <a href="#billing" class="btn btn-outline">Cart</a>
+        <a href="#billing" class="btn btn-primary">Billing</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-image">
+        <img id="main-product-image" src="pi2.png" alt="Premium Polo">
+        <div class="glow-effect"></div>
+      </div>
+      <div class="hero-details">
+        <span class="badge">New Arrival</span>
+        <h1>Premium Polo</h1>
+        <p class="availability"><span class="dot"></span> In Stock (Ready to Ship)</p>
+        <div class="price">৳ 775</div>
+
+        <div class="selection">
+          <h3>Select Size</h3>
+          <div class="size-options">
+            <label class="size-option"><input type="radio" name="size" value="M"> <span>M</span></label>
+            <label class="size-option"><input type="radio" name="size" value="L" checked>
+              <span>L</span></label>
+            <label class="size-option"><input type="radio" name="size" value="XL"> <span>XL</span></label>
+            <label class="size-option"><input type="radio" name="size" value="XXL"> <span>XXL</span></label>
+          </div>
+        </div>
+
+        <div class="selection">
+          <h3>Select Color</h3>
+          <div class="color-options">
+            <label class="color-option">
+              <input type="radio" name="color" value="red" data-image="pi2.png">
+              <span class="color-swatch" style="background-color: rgb(236, 0, 0);"></span>
+            </label>
+            <label class="color-option">
+              <input type="radio" name="color" value="blue" data-image="pi1.png">
+              <span class="color-swatch" style="background-color: rgb(5, 5, 240);"></span>
+            </label>
+          </div>
+        </div>
+
+        <a href="#billing" class="btn btn-primary btn-large glow-btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Details Section -->
+  <section class="product-details">
+    <div class="container">
+      <h2>Why Choose Our Premium Polo?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Premium Material</h3>
+          <p>Crafted from 100% fine combed cotton for ultimate softness and durability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧵</div>
+          <h3>High GSM</h3>
+          <p>220 GSM fabric weight ensures the perfect balance of thickness and breathability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Reactive Dye</h3>
+          <p>Vibrant colors that won't fade away even after multiple washes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👕</div>
+          <h3>Perfect Fit</h3>
+          <p>Tailored for a sharp, modern silhouette that complements your physique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Billing Section -->
+  <section id="billing" class="billing-section">
+    <div class="container">
+      <div class="billing-card">
+        <h2>Secure Your Order</h2>
+        <p>Fill out the details below to complete your purchase.</p>
+
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" required placeholder="Enter your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" required placeholder="01XXX-XXXXXX">
+          </div>
+
+          <div class="form-group">
+            <label for="district">District *</label>
+            <input type="text" id="district" required placeholder="e.g. Dhaka">
+          </div>
+
+          <div class="form-group">
+            <label for="thana">Thana/Upazila *</label>
+            <input type="text" id="thana" required placeholder="e.g. Dhanmondi">
+          </div>
+
+          <div class="form-group">
+            <label for="address">Area/Village/Detailed Address *</label>
+            <textarea id="address" rows="3" required placeholder="House, Road, Area details..."></textarea>
+          </div>
+
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+              <span>Premium Polo (1x)</span>
+              <span>৳ 775</span>
+            </div>
+            <div class="summary-row">
+              <span>Delivery Charge</span>
+              <span>৳ 100</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total Payable</span>
+              <span>৳ 875</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full glow-btn">Confirm Order (Cash on
+            Delivery)</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h2>GRACIVE</h2>
+        <p>Look Smart, Clean & Confident.</p>
+      </div>
+      <div class="footer-links">
+        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Return Policy</h3>
+        <p style="color: var(--text-muted); max-width: 300px; font-size: 0.9rem;">We offer a 7-day return policy. If you
+          receive a defective or incorrect item, please contact us within 7 days of delivery for a replacement.</p>
+      </div>
+      <div class="footer-social">
+        <p>Follow Us</p>
+        <a href="https://www.facebook.com/gracive.world" target="_blank"
+          style="color: #1877F2; text-decoration: none; display: inline-block;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GRACIVE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
